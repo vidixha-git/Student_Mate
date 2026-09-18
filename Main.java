@@ -1,6 +1,4 @@
 ```java
-package com.studentmate;
-
 import java.util.Scanner;
 
 public class Main {
@@ -10,14 +8,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         StudentManager manager = new StudentManager();
 
-        int choice;
+        int choice = 0;
 
         System.out.println("======================================");
-        System.out.println("        STUDENT-MATE");
-        System.out.println("   Student Management System");
+        System.out.println("          STUDENT-MATE");
+        System.out.println("     Student Management System");
         System.out.println("======================================");
 
         do {
+
             System.out.println("\n----------- MAIN MENU -----------");
             System.out.println("1. Add Student");
             System.out.println("2. View All Students");
@@ -29,6 +28,7 @@ public class Main {
             System.out.print("Enter your choice: ");
 
             try {
+
                 choice = Integer.parseInt(sc.nextLine());
 
                 switch (choice) {
@@ -54,16 +54,22 @@ public class Main {
                         break;
 
                     case 6:
-                        System.out.println("\nThank you for using STUDENT-MATE!");
+                        System.out.println(
+                                "\nThank you for using STUDENT-MATE!"
+                        );
                         break;
 
                     default:
-                        System.out.println("Invalid choice. Please try again.");
+                        System.out.println(
+                                "Invalid choice. Please select 1 to 6."
+                        );
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number.");
-                choice = 0;
+
+                System.out.println(
+                        "Invalid input. Please enter a number."
+                );
             }
 
         } while (choice != 6);
