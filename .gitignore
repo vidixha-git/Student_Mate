@@ -1,0 +1,27 @@
+```text
+# Java compiled files
+*.class
+
+# Java build folders
+bin/
+out/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+```
